@@ -1,0 +1,13 @@
+#############################
+# Configuration et sécurité #
+#############################
+
+# Bloque l'accès aux répertoires
+Options -Indexes
+
+# Pages d'erreur personnalisées
+ErrorDocument 403 /ma-cuisine-adoree/includes/common/errors/errors.php?code=403
+ErrorDocument 404 /ma-cuisine-adoree/includes/common/errors/errors.php?code=404
+ErrorDocument 408 /ma-cuisine-adoree/includes/common/errors/errors.php?code=408
+ErrorDocument 500 /ma-cuisine-adoree/includes/common/errors/errors.php?code=500
+ErrorDocument 503 /ma-cuisine-adoree/includes/common/errors/errors.php?code=503
