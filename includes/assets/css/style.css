@@ -1,0 +1,277 @@
+/**************/
+/*** Commun ***/
+/**************/
+
+/*** Polices ***/
+@font-face
+{
+    font-family: 'jost_hairline';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-100-Hairline.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-100-Hairline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_hairline_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-100-HairlineItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-100-HairlineItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_thin';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-200-Thin.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-200-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_thin_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-200-ThinItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-200-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_light';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-300-Light.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-300-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_light_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-300-LightItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-300-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_regular';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-400-Book.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-400-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_regular_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-400-BookItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-400-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_medium';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-500-Medium.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-500-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_medium_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-500-MediumItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-500-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_semi_bold';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-600-Semi.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-600-Semi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_semi_bold_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-600-SemiItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-600-SemiItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_bold';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-700-Bold.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-700-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_bold_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-700-BoldItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-700-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_heavy';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-800-Heavy.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-800-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_heavy_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-800-HeavyItalic.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-800-HeavyItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_black';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-900-Black.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-900-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'jost_black_italic';
+    src: url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-900-Black.otf') format('opentype'),
+         url('/ma-cuisine-adoree/includes/fonts/Jost/Jost-900-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** Général ***/
+html
+{
+    height: 100%;
+}
+
+body
+{
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    background-color: white;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    outline: none;
+    text-decoration: none;
+}
+
+input:focus, textarea:focus
+{
+    outline: none;
+}
+
+/*** Menu ***/
+nav
+{
+    float: left;
+    width: 70px;
+    height: calc(100vh - 30px);
+    background-color: white;
+    box-shadow: 0 0 3px #7c7c7c;
+}
+
+.lien_nav
+{
+    display: block;
+}
+
+.image_lien_nav
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50px;
+}
+
+/*** Entête ***/
+header
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+/*** Contenu ***/
+section:not(.section_index)
+{
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    height: 100%;
+    background-color: white;
+}
+
+article:not(.article_index)
+{
+    display: block;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-color: white;
+}
+
+/*** Pied de page ***/
+footer
+{
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0 0 3px #7c7c7c;
+}
+
+.version
+{
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    font-family: jost_light, Verdana, sans-serif;
+    font-size: 80%;
+    color: #262626;
+}
+
+.copyright
+{
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 30px;
+    font-family: jost_light, Verdana, sans-serif;
+    font-size: 80%;
+    color: #262626;
+}

@@ -1,34 +1,34 @@
 <?php
-    /****************
-    ***** Index *****
-    *****************
+    /*******************
+    ***** Recettes *****
+    ********************
     Fonctionnalités :
-    - Menu principal
-    ****************/
+    - TODO
+    *******************/
 
     // Fonctions communes
-    include_once('includes/functions/metier_commun.php');
-    // include_once('includes/functions/physique_commun.php');
+    include_once('../../includes/functions/metier_commun.php');
+    // include_once('../../includes/functions/physique_commun.php');
 
     // Contrôles communs
     // controlsIndex();
 
     // Modèle de données
-    include_once('site/index/modele/metier_index.php');
-    // include_once('portail/index/modele/controles_index.php');
-    // include_once('portail/index/modele/physique_index.php');
+    include_once('modele/metier_recettes.php');
+    // include_once('modele/controles_recettes.php');
+    // include_once('modele/physique_recettes.php');
 
     // Appels métier
     switch ($_GET['action'])
     {
         case 'goConsulter':
             // Récupération du menu
-            $menu = getMenu(true);
+            $menu = getMenu(false);
             break;
 
         default:
             // Contrôle action renseignée URL
-            header('location: /ma-cuisine-adoree/index.php?action=goConsulter');
+            header('location: recettes.php?action=goConsulter');
             break;
     }
 
@@ -53,7 +53,7 @@
     {
         case 'goConsulter':
         default:
-            include_once('site/index/vue/vue_index.php');
+            include_once('vue/vue_recettes.php');
             break;
     }
 ?>
