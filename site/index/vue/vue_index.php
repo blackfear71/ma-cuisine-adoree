@@ -3,9 +3,9 @@
     <head>
         <!-- Head commun & spécifique-->
         <?php
-            $titleHead  = '';
-            $styleHead  = 'styleIndex.css';
-            $scriptHead = '';
+            $titlePage  = '';
+            $stylePage  = 'styleIndex.css';
+            $scriptPage = '';
 
             include('includes/common/head.php');
         ?>
@@ -16,8 +16,10 @@
         <section class="section_index">
             <article class="article_index">
                 <?php
+                    // Initialisation
                     $index = '';
 
+                    // Logo et titre
                     $index .= '<div class="conteneur_index">';
                         // Logo
                         $index .= '<img src="/ma-cuisine-adoree/favicon.png" alt="favicon" title="Ma cuisine adorée" class="image_index" />';
@@ -26,12 +28,14 @@
                         $index .= '<div class="titre_index">Ma cuisine adorée</div>';
                     $index .= '</div>';
 
+                    // Affichage
                     echo $index;
                 ?>
             </article>
 
             <aside>
                 <?php
+                    // Initialisation
                     $index = '';
 
                     // Liens du menu
@@ -45,6 +49,7 @@
                         $index .= '</a>';
                     }
 
+                    // Affichage
                     echo $index;
                 ?>
             </aside>

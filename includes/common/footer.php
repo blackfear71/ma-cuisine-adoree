@@ -1,13 +1,21 @@
 <?php
-    // Numéro de version
-    $version = '1.0';
+    // Initialisations
+    $footer = '';
 
     // Version
-    echo '<div class="version">v' . $version . '</div>';
+    $version = '1.0';
+
+    $footer .= '<div class="version">v' . $version . '</div>';
 
     // Copyright
-    if (date('Y') != 2023)
-        echo '<div class="copyright">© 2023-' . date('Y') . ' - Ma cuisine adorée</div>';
+    $dateDebutSite    = '2023';
+    $dateActuelleSite = date('Y');
+
+    if ($dateDebutSite == $dateActuelleSite)
+        $footer .= '<div class="copyright">© ' . $dateDebutSite . ' - Ma cuisine adorée</div>';
     else
-        echo '<div class="copyright">© 2023 - Ma cuisine adorée</div>';
+        $footer .= '<div class="copyright">© ' . $dateDebutSite . '-' . $dateActuelleSite . ' - Ma cuisine adorée</div>';
+
+    // Affichage
+    echo $footer;
 ?>

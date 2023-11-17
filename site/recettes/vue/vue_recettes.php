@@ -3,9 +3,9 @@
     <head>
         <!-- Head commun & spécifique-->
         <?php
-            $titleHead  = '';
-            $styleHead  = '';
-            $scriptHead = '';
+            $titlePage  = '';
+            $stylePage  = '';
+            $scriptPage = '';
 
             include('../../includes/common/head.php');
         ?>
@@ -15,6 +15,7 @@
         <!-- Navigation -->
         <nav>
             <?php
+                // Initialisation
                 $index = '';
 
 
@@ -30,6 +31,11 @@
                     $index .= '</a>';
                 }
 
+
+
+
+
+                // Affichage
                 echo $index;
             ?>
         </nav>

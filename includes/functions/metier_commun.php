@@ -1,6 +1,30 @@
 <?php
     include_once($_SERVER['DOCUMENT_ROOT'] . '/ma-cuisine-adoree/includes/classes/menu.php');
 
+    // METIER : Récupération de la plateforme
+    // RETOUR : Plateforme
+    function getPlateforme()
+    {
+        // Initialisations
+        $plateforme = 'web';
+
+        // Récupération des données
+        $userAgent = $_SERVER['HTTP_USER_AGENT'];
+
+        // Recherche si plateforme mobile
+        if (preg_match('/iphone/i', $userAgent)
+        OR  preg_match('/android/i', $userAgent)
+        OR  preg_match('/blackberry/i', $userAgent)
+        OR  preg_match('/symb/i', $userAgent)
+        OR  preg_match('/ipad/i', $userAgent)
+        OR  preg_match('/ipod/i', $userAgent)
+        OR  preg_match('/phone/i', $userAgent))
+            $plateforme = 'mobile';
+
+        // Retour
+        return $plateforme;
+    }
+
     // METIER : Récupération liens menu
     // RETOUR : Menu
     function getMenu($isIndex)
