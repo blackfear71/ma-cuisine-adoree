@@ -15,8 +15,8 @@
 
 
     // Fonctions communes
-    include_once($_SERVER['DOCUMENT_ROOT'] . '/ma-cuisine-adoree/includes/functions/metier_commun.php');
-    // include_once($_SERVER['DOCUMENT_ROOT'] . '/ma-cuisine-adoree/includes/functions/physique_commun.php');
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions/metier_commun.php');
+    // include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/functions/physique_commun.php');
 
     // Modèle de données
     include_once('modele/metier_errors.php');
@@ -26,7 +26,7 @@
     {
         default:
             // Récupération de la date de dernière modification pour mise à jour automatique du cache du navigateur
-            $dateModificationCssErrors = filemtime($_SERVER['DOCUMENT_ROOT'] . '/ma-cuisine-adoree/includes/assets/css/styleErrors.css');
+            $dateModificationCssErrors = filemtime($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/css/styleErrors.css');
 
             // Récupération de l'erreur
             $erreur = getErreurServeur($_GET['code']);

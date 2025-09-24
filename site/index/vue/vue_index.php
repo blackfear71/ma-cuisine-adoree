@@ -22,7 +22,7 @@
                     // Logo et titre
                     $index .= '<div class="conteneur_index">';
                         // Logo
-                        $index .= '<img src="/ma-cuisine-adoree/favicon.png" alt="favicon" title="Ma cuisine adorée" class="image_index" />';
+                        $index .= '<img src="/favicon.png" alt="favicon" title="Ma cuisine adorée" class="image_index" />';
 
                         // Titre
                         $index .= '<div class="titre_index">Ma cuisine adorée</div>';

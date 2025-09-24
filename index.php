@@ -28,7 +28,7 @@
 
         default:
             // Contrôle action renseignée URL
-            header('location: /ma-cuisine-adoree/index.php?action=goConsulter');
+            header('location: /index.php?action=goConsulter');
             break;
     }
 
